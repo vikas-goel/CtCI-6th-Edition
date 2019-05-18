@@ -24,7 +24,10 @@ func (this *Stack) Pop() (int, bool) {
 	}
 
 	this.size--
-	return this.nums[this.size], true
+	element := this.nums[this.size]
+	this.nums[this.size] = 0
+
+	return element, true
 }
 
 type Tower struct {

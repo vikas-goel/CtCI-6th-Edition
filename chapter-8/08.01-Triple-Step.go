@@ -6,7 +6,7 @@ import "fmt"
 // For mulitple calls, possible ways for each step can be stored in a lookup
 // table for increased time optimization (i.e. trade-off with space).
 func WaysToSteps(steps uint) uint {
-	var ways1, ways2, ways3 uint = 1, 2, 3
+	var ways1, ways2, ways3 uint = 1, 2, 4
 	if steps == 0 || steps == 1 {
 		return ways1
 	} else if steps == 2 {
